@@ -6,34 +6,42 @@ This analysis will be completed in python utilizing the pandas library in order 
 ## Results
 - District Summary
     - Since the only thing that was removed was the scores of the ninth graders in Thomas High School, the district summary had the base statistics remain the same, which was total schools, total students, and the total budget. However, once we get to the statistics regarding scores, such as average math score, average reading score, percent passing math, percent passing reading, and percent overall passing, we can see that all except one decreased once the ninth graders' scores were taken out. The only score statistic that did not change was the average reading score, or at least the change was so small it became insignificant. All of the changed statistics did not change by much, with the largest change being the overall passing percentage decreasing by 0.3 points. We can see this with the difference in the first district summary:
-
+![Old_District.png](https://github.com/Lavernus/School_District_Analysis/blob/main/Pics/Old_District.png)
         and the new district summary :
+![District.png](https://github.com/Lavernus/School_District_Analysis/blob/main/Pics/District.png)      
 - School Summary
-    - In the school summary, we can focus on Thomas High School, since that was the only school accused of academic dishonesty. Again, only the scores were affected, so the base stats remained the same, such as school type, total students, total school budget, and per student budget. Two of the stats that did change were average math score and average reading score. The first rose by 0.06 points and the second fell by 0.05 points. The percentages of passing students were much more thrown off, with the percent passing math rising by 26.36 points, the percent passing reading rising by 27.65 points, and the overall percent passing rising by 25.87. 
+    - In the school summary, we can focus on Thomas High School, since that was the only school accused of academic dishonesty. Again, only the scores were affected, so the base stats remained the same, such as school type, total students, total school budget, and per student budget. Two of the stats that did change were average math score and average reading score. The first rose by 0.06 points and the second fell by 0.05 points. The percentages of passing students were much more thrown off, with the percent passing math rising by 26.36 points, the percent passing reading rising by 27.65 points, and the overall percent passing rising by 25.87. This was shown in the difference between the output of the first dataset:
+![Old_Thomas.png](https://github.com/Lavernus/School_District_Analysis/blob/main/Pics/Old_Thomas.png)
+        and the new dataset:
+![New_Thomas.png](https://github.com/Lavernus/School_District_Analysis/blob/main/Pics/New_Thomas.png)
 - Thomas High School in Relation
     - Given the large difference between the new overall percent passing and the old one, it is no surprise that Thomas High School reflects this in the school rankings. With the old passing percentage, Thomas High School was ranked 8th compared to other schools with 65.08% of their students passing both math and reading. 
-
+![Old_Ranking.png](https://github.com/Lavernus/School_District_Analysis/blob/main/Pics/Old_Ranking.png)
         With the new passing percentage, Thomas High School ranks 2nd, with 90.63% of their students passing both math and reading.
-
+![New_Ranking.png](https://github.com/Lavernus/School_District_Analysis/blob/main/Pics/New_Ranking.png)
 - Grouped Scores
     - Math and Reading by Grade
-        - The average math and reading scores sorted by grade for each school have a fairly straight forward change between the old data and the new data. Everything is exactly the same, except the ninth grade scores for Thomas High School have been replaced by nan. For example, the old data displays as this:
+        - The average math and reading scores sorted by grade for each school have a fairly straight forward change between the old data and the new data. Everything is exactly the same, except the ninth grade scores for Thomas High School have been replaced by nan. For example, the old math averages sorted by grade displays as this:
+![Old_Grade.png](https://github.com/Lavernus/School_District_Analysis/blob/main/Pics/Old_Grade.png)
+            
+           and the new math averages display as this:
+![New_Grade](https://github.com/Lavernus/School_District_Analysis/blob/main/Pics/New_Grade.png)
 
-            and the new data displays as this: 
     - Scores by School Spending
         - The scores of each school were sorted into bins that separated them by how much each school spent on an individual student. Surprisingly, there was no change to the average scores and percentage of students passing based on the spending ranges. The old data appeared as this:
-
+![Old_spending.png](https://github.com/Lavernus/School_District_Analysis/blob/main/Pics/Old_spending.png)
             and the new data appeared as this:
+![New_Spending.png](https://github.com/Lavernus/School_District_Analysis/blob/main/Pics/New_Spending.png)
     - Scores by School Size
         - I then sorted the schools by how many students they had and how that impacted the score statistics. Again, there was no change between the old and new data, with the old data appearing as this:
-
+![Old_Size.png](https://github.com/Lavernus/School_District_Analysis/blob/main/Pics/Old_Size.png)
             and the new data appearing as this:
-
+![New_Size.png](https://github.com/Lavernus/School_District_Analysis/blob/main/Pics/New_Size.png)
     - Scores by School Type
         - The schools were then sorted based on what type of school they were, which was Charter or District. The score statistics based on this did not change between the old and new data, with the old data appearing as this:
-
+![Old_Type.png](https://github.com/Lavernus/School_District_Analysis/blob/main/Pics/Old_Type.png)
             and the new data appearing as this:
-
+![New_Type.png](https://github.com/Lavernus/School_District_Analysis/blob/main/Pics/New_Type.png)
 ## Summary
 At first glance, there doesn't seem to be much difference in the district summary once the ninth grade scores for Thomas High School are taken out. However, considering that there are only 461 ninth graders at Thomas High School compared to the 39,170 total students in the district, having any change in the percentages of the passing scores could imply that the difference between that taking out those ninth graders' scores had a sizeable effect in bringing down the district averages. 
 
